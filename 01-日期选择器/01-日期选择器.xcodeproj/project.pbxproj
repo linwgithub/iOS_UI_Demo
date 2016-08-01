@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3583FA181D4F8C0B00BD62AD /* LWKBToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3583FA171D4F8C0B00BD62AD /* LWKBToolBar.m */; };
+		3583FA1A1D4F8C2A00BD62AD /* LWKBToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3583FA191D4F8C2A00BD62AD /* LWKBToolBar.xib */; };
 		35A34B551D4EB9A800C39813 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A34B541D4EB9A800C39813 /* main.m */; };
 		35A34B581D4EB9A800C39813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A34B571D4EB9A800C39813 /* AppDelegate.m */; };
 		35A34B5B1D4EB9A800C39813 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A34B5A1D4EB9A800C39813 /* ViewController.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3583FA161D4F8C0B00BD62AD /* LWKBToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWKBToolBar.h; sourceTree = "<group>"; };
+		3583FA171D4F8C0B00BD62AD /* LWKBToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWKBToolBar.m; sourceTree = "<group>"; };
+		3583FA191D4F8C2A00BD62AD /* LWKBToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWKBToolBar.xib; sourceTree = "<group>"; };
 		35A34B501D4EB9A700C39813 /* 01-日期选择器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-日期选择器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A34B541D4EB9A800C39813 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35A34B561D4EB9A800C39813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +72,9 @@
 				35A34B611D4EB9A800C39813 /* LaunchScreen.storyboard */,
 				35A34B641D4EB9A800C39813 /* Info.plist */,
 				35A34B531D4EB9A800C39813 /* Supporting Files */,
+				3583FA161D4F8C0B00BD62AD /* LWKBToolBar.h */,
+				3583FA171D4F8C0B00BD62AD /* LWKBToolBar.m */,
+				3583FA191D4F8C2A00BD62AD /* LWKBToolBar.xib */,
 			);
 			path = "01-日期选择器";
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 				35A34B631D4EB9A800C39813 /* LaunchScreen.storyboard in Resources */,
 				35A34B601D4EB9A800C39813 /* Assets.xcassets in Resources */,
 				35A34B5E1D4EB9A800C39813 /* Main.storyboard in Resources */,
+				3583FA1A1D4F8C2A00BD62AD /* LWKBToolBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +161,7 @@
 				35A34B5B1D4EB9A800C39813 /* ViewController.m in Sources */,
 				35A34B581D4EB9A800C39813 /* AppDelegate.m in Sources */,
 				35A34B551D4EB9A800C39813 /* main.m in Sources */,
+				3583FA181D4F8C0B00BD62AD /* LWKBToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +308,7 @@
 				35A34B691D4EB9A800C39813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
