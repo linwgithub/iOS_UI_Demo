@@ -38,17 +38,44 @@
                         <action selector="gotoNextView:" destination="-1" eventType="touchUpInside" id="fis-Vf-ppa"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一个控制器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3so-NA-rfI">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="102" id="2Q7-Lj-5Jo"/>
+                        <constraint firstAttribute="height" constant="21" id="Omf-Av-fJd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2Q7-Lj-5Jo"/>
+                            <exclude reference="Omf-Av-fJd"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="2Q7-Lj-5Jo"/>
+                            <include reference="Omf-Av-fJd"/>
+                        </mask>
+                    </variation>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="3so-NA-rfI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="A35-m1-KkT"/>
                 <constraint firstItem="nF2-84-v88" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B3D-QT-uKl"/>
                 <constraint firstItem="nF2-84-v88" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CVM-RG-Gbm"/>
+                <constraint firstItem="3so-NA-rfI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="154" id="wHh-nw-9SA"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="nF2-84-v88"/>
+                    <exclude reference="3so-NA-rfI"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="A35-m1-KkT"/>
+                    <exclude reference="wHh-nw-9SA"/>
                     <exclude reference="B3D-QT-uKl"/>
                     <exclude reference="CVM-RG-Gbm"/>
                 </mask>
@@ -56,8 +83,11 @@
             <variation key="widthClass=compact">
                 <mask key="subviews">
                     <include reference="nF2-84-v88"/>
+                    <include reference="3so-NA-rfI"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="A35-m1-KkT"/>
+                    <include reference="wHh-nw-9SA"/>
                     <include reference="B3D-QT-uKl"/>
                     <include reference="CVM-RG-Gbm"/>
                 </mask>

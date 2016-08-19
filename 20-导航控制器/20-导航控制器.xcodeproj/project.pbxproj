@@ -17,6 +17,8 @@
 		35E7FFCA1D6739F000D1AF2B /* OeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E7FFC81D6739F000D1AF2B /* OeViewController.xib */; };
 		35E7FFCE1D673A0000D1AF2B /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7FFCC1D673A0000D1AF2B /* TwoViewController.m */; };
 		35E7FFCF1D673A0000D1AF2B /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E7FFCD1D673A0000D1AF2B /* TwoViewController.xib */; };
+		35E7FFD31D673CAB00D1AF2B /* ThereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7FFD11D673CAB00D1AF2B /* ThereViewController.m */; };
+		35E7FFD41D673CAB00D1AF2B /* ThereViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E7FFD21D673CAB00D1AF2B /* ThereViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		35E7FFCB1D673A0000D1AF2B /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		35E7FFCC1D673A0000D1AF2B /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		35E7FFCD1D673A0000D1AF2B /* TwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
+		35E7FFD01D673CAB00D1AF2B /* ThereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThereViewController.h; sourceTree = "<group>"; };
+		35E7FFD11D673CAB00D1AF2B /* ThereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThereViewController.m; sourceTree = "<group>"; };
+		35E7FFD21D673CAB00D1AF2B /* ThereViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThereViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,9 @@
 				35E7FFCB1D673A0000D1AF2B /* TwoViewController.h */,
 				35E7FFCC1D673A0000D1AF2B /* TwoViewController.m */,
 				35E7FFCD1D673A0000D1AF2B /* TwoViewController.xib */,
+				35E7FFD01D673CAB00D1AF2B /* ThereViewController.h */,
+				35E7FFD11D673CAB00D1AF2B /* ThereViewController.m */,
+				35E7FFD21D673CAB00D1AF2B /* ThereViewController.xib */,
 			);
 			path = "20-导航控制器";
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 				35E7FFCA1D6739F000D1AF2B /* OeViewController.xib in Resources */,
 				35E7FFBC1D6737D900D1AF2B /* LaunchScreen.storyboard in Resources */,
 				35E7FFB91D6737D900D1AF2B /* Assets.xcassets in Resources */,
+				35E7FFD41D673CAB00D1AF2B /* ThereViewController.xib in Resources */,
 				35E7FFCF1D673A0000D1AF2B /* TwoViewController.xib in Resources */,
 				35E7FFB71D6737D900D1AF2B /* Main.storyboard in Resources */,
 			);
@@ -169,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35E7FFC91D6739F000D1AF2B /* OeViewController.m in Sources */,
+				35E7FFD31D673CAB00D1AF2B /* ThereViewController.m in Sources */,
 				35E7FFB41D6737D900D1AF2B /* ViewController.m in Sources */,
 				35E7FFB11D6737D900D1AF2B /* AppDelegate.m in Sources */,
 				35E7FFCE1D673A0000D1AF2B /* TwoViewController.m in Sources */,

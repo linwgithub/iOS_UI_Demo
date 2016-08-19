@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoViewController">
@@ -13,7 +14,115 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第二个控制器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhd-ER-ARm">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="a4i-Ea-4la"/>
+                        <constraint firstAttribute="width" constant="102" id="cb3-5h-ckg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="a4i-Ea-4la"/>
+                            <exclude reference="cb3-5h-ckg"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="a4i-Ea-4la"/>
+                            <include reference="cb3-5h-ckg"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rd8-SN-DB8">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="edJ-kL-9C7"/>
+                        <constraint firstAttribute="width" constant="120" id="hVW-LB-V3H"/>
+                    </constraints>
+                    <state key="normal" title="返回上一个控制器"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="edJ-kL-9C7"/>
+                            <exclude reference="hVW-LB-V3H"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="edJ-kL-9C7"/>
+                            <include reference="hVW-LB-V3H"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="gobackView:" destination="-1" eventType="touchUpInside" id="gAx-iV-VmZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbC-BU-yQJ">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="ByJ-NV-Ghl"/>
+                        <constraint firstAttribute="height" constant="30" id="iDH-gC-DKc"/>
+                    </constraints>
+                    <state key="normal" title="进入第三个控制器"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ByJ-NV-Ghl"/>
+                            <exclude reference="iDH-gC-DKc"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="ByJ-NV-Ghl"/>
+                            <include reference="iDH-gC-DKc"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="enterThereView:" destination="-1" eventType="touchUpInside" id="L5f-ln-04j"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Rd8-SN-DB8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aUE-gB-e7t"/>
+                <constraint firstItem="Rhd-ER-ARm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="d5b-K1-Mdh"/>
+                <constraint firstItem="Rhd-ER-ARm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="134" id="gHE-zV-CAV"/>
+                <constraint firstItem="gbC-BU-yQJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="heg-cv-7KF"/>
+                <constraint firstItem="Rd8-SN-DB8" firstAttribute="top" secondItem="Rhd-ER-ARm" secondAttribute="bottom" constant="58" id="k6f-cW-t1f"/>
+                <constraint firstItem="gbC-BU-yQJ" firstAttribute="top" secondItem="Rd8-SN-DB8" secondAttribute="bottom" constant="24" id="zwU-Ah-75x"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Rhd-ER-ARm"/>
+                    <exclude reference="Rd8-SN-DB8"/>
+                    <exclude reference="gbC-BU-yQJ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="d5b-K1-Mdh"/>
+                    <exclude reference="gHE-zV-CAV"/>
+                    <exclude reference="aUE-gB-e7t"/>
+                    <exclude reference="k6f-cW-t1f"/>
+                    <exclude reference="heg-cv-7KF"/>
+                    <exclude reference="zwU-Ah-75x"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Rhd-ER-ARm"/>
+                    <include reference="Rd8-SN-DB8"/>
+                    <include reference="gbC-BU-yQJ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="d5b-K1-Mdh"/>
+                    <include reference="gHE-zV-CAV"/>
+                    <include reference="aUE-gB-e7t"/>
+                    <include reference="k6f-cW-t1f"/>
+                    <include reference="heg-cv-7KF"/>
+                    <include reference="zwU-Ah-75x"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

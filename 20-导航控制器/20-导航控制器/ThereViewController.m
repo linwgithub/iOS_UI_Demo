@@ -1,24 +1,20 @@
 //
-//  TwoViewController.m
+//  ThereViewController.m
 //  20-导航控制器
 //
 //  Created by 林威 on 16/8/19.
 //  Copyright © 2016年 linw. All rights reserved.
 //
 
-#import "TwoViewController.h"
 #import "ThereViewController.h"
 
-@interface TwoViewController ()
+@interface ThereViewController ()
 
 @end
 
-@implementation TwoViewController
-- (IBAction)gobackView:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-- (IBAction)enterThereView:(id)sender {
-    [self.navigationController pushViewController:[[ThereViewController alloc]init] animated:YES];
+@implementation ThereViewController
+- (IBAction)gotoRootView:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
