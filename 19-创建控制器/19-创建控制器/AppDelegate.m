@@ -20,19 +20,23 @@
     
     //创建窗口
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    //获取Storyboard
+    //1、获取Storyboard
     UIStoryboard *mainStryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    //获取箭头所指的控制器
+    //2.1、获取箭头所指的控制器
     //id vc = [mainStryBoard instantiateInitialViewController];
     
-    //根据标识获取控制器
+    //2.2、根据标识获取控制器
     //根据设置的identify中storyboard ID来获取
-    id vc = [mainStryBoard instantiateViewControllerWithIdentifier:@"secend"];
+    //id vc = [mainStryBoard instantiateViewControllerWithIdentifier:@"secend"];
     
-    //设置根控制器
+    //2.3、直接创建控制器
+    UIViewController *vc = [[UIViewController alloc]init];
+    vc.view.backgroundColor = [UIColor grayColor];
+    
+    //3、设置根控制器
     window.rootViewController = vc;
     
-    //设为主窗口并可见
+    //4、设为主窗口并可见
     [window makeKeyAndVisible];
     self.window = window;
     
