@@ -19,7 +19,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //设置自定义的返回按钮
+    UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 46, 31)];
+    [backBtn setBackgroundImage:[UIImage imageNamed:@"btn_back_normal" ]forState:UIControlStateNormal];
+    [backBtn setBackgroundImage:[UIImage imageNamed:@"btn_back_selected"] forState:UIControlStateSelected];
+    [backBtn addTarget:self action:@selector(backView) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *cusBackItem = [[UIBarButtonItem alloc]initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = cusBackItem;
+    
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)backView{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

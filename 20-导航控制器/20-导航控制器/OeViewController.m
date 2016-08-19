@@ -16,7 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //导航栏按钮使用
+    
+    //1、设置标题
+    //使用当前控制器的navigationItem属性设置
+    self.navigationItem.title = @"第一个控制器";
+    
+    //2、设置导航栏左右两边按钮
+    //2.1、创建导航栏按钮
+    UIBarButtonItem *oneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:nil action:nil];
+    UIBarButtonItem *twoItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:nil action:nil];
+    
+    //3.1、设置单个导航栏按钮
+    //self.navigationItem.leftBarButtonItem = oneItem;
+    self.navigationItem.rightBarButtonItem = oneItem;
+    //3.2、设置多个导航栏按钮
+    self.navigationItem.leftBarButtonItems = @[oneItem,twoItem];
     // Do any additional setup after loading the view from its nib.
+    
+    //4、设置返回按钮
+    //ps：返回按钮会显示在下一个控制器导航栏的左边
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithTitle:@"返回上一个控制器" style:UIBarButtonSystemItemEdit target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backItem;
 }
 - (IBAction)gotoNextView:(id)sender {
     TwoViewController *two = [[TwoViewController alloc]init];;
