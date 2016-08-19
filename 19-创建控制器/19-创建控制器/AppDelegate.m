@@ -23,7 +23,11 @@
     //获取Storyboard
     UIStoryboard *mainStryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     //获取箭头所指的控制器
-    id vc = [mainStryBoard instantiateInitialViewController];
+    //id vc = [mainStryBoard instantiateInitialViewController];
+    
+    //根据标识获取控制器
+    //根据设置的identify中storyboard ID来获取
+    id vc = [mainStryBoard instantiateViewControllerWithIdentifier:@"secend"];
     
     //设置根控制器
     window.rootViewController = vc;
