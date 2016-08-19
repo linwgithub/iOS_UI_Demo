@@ -18,19 +18,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    UIWindow *window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    //创建根控制器
-    OeViewController *vc = [[OeViewController alloc]init];
-//    vc.view.backgroundColor = [UIColor greenColor];
-    
-    //创建导航控制器
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
-    
-    //设置导航控制器为根控制器
-    window.rootViewController = nav;
-    
-    [window makeKeyAndVisible];
-    self.window = window;
+//    UIWindow *window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    //创建根控制器
+//    OeViewController *vc = [[OeViewController alloc]init];
+////    vc.view.backgroundColor = [UIColor greenColor];
+//    
+//    //创建导航控制器
+//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+//    
+//    //设置导航控制器为根控制器
+//    window.rootViewController = nav;
+//    
+//    [window makeKeyAndVisible];
+//    self.window = window;
     return YES;
 }
 

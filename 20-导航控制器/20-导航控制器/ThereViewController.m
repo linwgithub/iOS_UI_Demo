@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     //设置自定义的返回按钮
+    //ps：自定义图片的返回按钮只能设置为在下一个控制器的导航栏的左边按钮
     UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 46, 31)];
     [backBtn setBackgroundImage:[UIImage imageNamed:@"btn_back_normal" ]forState:UIControlStateNormal];
     [backBtn setBackgroundImage:[UIImage imageNamed:@"btn_back_selected"] forState:UIControlStateSelected];

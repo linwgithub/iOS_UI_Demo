@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bDr-Gb-3S6">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xTm-QP-gG5">
+            <objects>
+                <viewController id="bDr-Gb-3S6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Hq-8V-wzo"/>
+                        <viewControllerLayoutGuide type="bottom" id="qb5-eV-ne3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xfC-zB-INL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAn-YB-l6u">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="第一个控制器" id="3L8-Eb-sqD">
+                                        <barButtonItem key="rightBarButtonItem" title="第二个控制器" id="bbK-hc-i0e">
+                                            <connections>
+                                                <segue destination="1dx-ID-HoM" kind="modal" id="HB1-6L-SaY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBV-gM-SSY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="到第三个"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="170" y="243" width="60" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="9yQ-iL-0Yc" kind="modal" id="lVB-Xr-Qpd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="SAn-YB-l6u"/>
+                                <exclude reference="oBV-gM-SSY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="SAn-YB-l6u"/>
+                                <include reference="oBV-gM-SSY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Br0-1X-xWW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8W-BJ-lpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.5" y="248"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="TIz-TG-mZe">
+            <objects>
+                <viewController id="1dx-ID-HoM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xdv-7P-ctE"/>
+                        <viewControllerLayoutGuide type="bottom" id="hdA-GU-7sC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WBl-Wq-TQV">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csw-s1-dAf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="第二个控制器" id="Gp6-Td-oFE">
+                                        <barButtonItem key="rightBarButtonItem" title="第三个" id="bh1-3N-NDB">
+                                            <connections>
+                                                <segue destination="9yQ-iL-0Yc" kind="modal" id="gWI-DT-4nf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-10" y="34" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="csw-s1-dAf"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="csw-s1-dAf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="cqZ-yG-xte"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGH-dA-HKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="242"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pG6-u2-tf9">
+            <objects>
+                <viewController id="9yQ-iL-0Yc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tp5-tn-P5j"/>
+                        <viewControllerLayoutGuide type="bottom" id="9nO-01-xf9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oEv-Ib-bj4">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJ5-nx-gin">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="第三个控制器" id="Q59-Jf-KNo">
+                                        <barButtonItem key="leftBarButtonItem" title="返回第一个" id="FLY-IN-H48">
+                                            <connections>
+                                                <segue destination="bDr-Gb-3S6" kind="modal" id="lK2-aW-voo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-15" y="34" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="oJ5-nx-gin"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="oJ5-nx-gin"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="tbZ-Ga-hqC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGC-qN-zAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648.5" y="514"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lVB-Xr-Qpd"/>
+    </inferredMetricsTieBreakers>
+</document>
