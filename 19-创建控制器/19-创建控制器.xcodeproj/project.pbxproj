@@ -13,6 +13,8 @@
 		35E7FF8F1D672B2200D1AF2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E7FF8D1D672B2200D1AF2B /* Main.storyboard */; };
 		35E7FF911D672B2200D1AF2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E7FF901D672B2200D1AF2B /* Assets.xcassets */; };
 		35E7FF941D672B2200D1AF2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E7FF921D672B2200D1AF2B /* LaunchScreen.storyboard */; };
+		35E7FF9E1D6730A000D1AF2B /* WithXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7FF9C1D6730A000D1AF2B /* WithXibViewController.m */; };
+		35E7FF9F1D6730A000D1AF2B /* WithXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E7FF9D1D6730A000D1AF2B /* WithXibViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		35E7FF901D672B2200D1AF2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35E7FF931D672B2200D1AF2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35E7FF951D672B2200D1AF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E7FF9B1D6730A000D1AF2B /* WithXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithXibViewController.h; sourceTree = "<group>"; };
+		35E7FF9C1D6730A000D1AF2B /* WithXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithXibViewController.m; sourceTree = "<group>"; };
+		35E7FF9D1D6730A000D1AF2B /* WithXibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithXibViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,9 @@
 				35E7FF921D672B2200D1AF2B /* LaunchScreen.storyboard */,
 				35E7FF951D672B2200D1AF2B /* Info.plist */,
 				35E7FF841D672B2200D1AF2B /* Supporting Files */,
+				35E7FF9B1D6730A000D1AF2B /* WithXibViewController.h */,
+				35E7FF9C1D6730A000D1AF2B /* WithXibViewController.m */,
+				35E7FF9D1D6730A000D1AF2B /* WithXibViewController.xib */,
 			);
 			path = "19-创建控制器";
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E7FF9F1D6730A000D1AF2B /* WithXibViewController.xib in Resources */,
 				35E7FF941D672B2200D1AF2B /* LaunchScreen.storyboard in Resources */,
 				35E7FF911D672B2200D1AF2B /* Assets.xcassets in Resources */,
 				35E7FF8F1D672B2200D1AF2B /* Main.storyboard in Resources */,
@@ -150,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E7FF9E1D6730A000D1AF2B /* WithXibViewController.m in Sources */,
 				35E7FF8C1D672B2200D1AF2B /* ViewController.m in Sources */,
 				35E7FF891D672B2200D1AF2B /* AppDelegate.m in Sources */,
 				35E7FF861D672B2200D1AF2B /* main.m in Sources */,

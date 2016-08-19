@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WithXibViewController.h"
 
 @interface AppDelegate ()
 
@@ -30,8 +31,11 @@
     //id vc = [mainStryBoard instantiateViewControllerWithIdentifier:@"secend"];
     
     //2.3、直接创建控制器
-    UIViewController *vc = [[UIViewController alloc]init];
-    vc.view.backgroundColor = [UIColor grayColor];
+    //UIViewController *vc = [[UIViewController alloc]init];
+    //vc.view.backgroundColor = [UIColor grayColor];
+    
+    //2.4、通过xib创建控制器
+    WithXibViewController *vc = [[WithXibViewController alloc]initWithNibName:@"WithXibViewController" bundle:nil];
     
     //3、设置根控制器
     window.rootViewController = vc;
