@@ -34,8 +34,15 @@
     //UIViewController *vc = [[UIViewController alloc]init];
     //vc.view.backgroundColor = [UIColor grayColor];
     
-    //2.4、通过xib创建控制器
-    WithXibViewController *vc = [[WithXibViewController alloc]initWithNibName:@"WithXibViewController" bundle:nil];
+    //2.4.1、指定xib创建控制器
+    //WithXibViewController *vc = [[WithXibViewController alloc]initWithNibName:@"WithXibViewController" bundle:nil];
+    
+    //2.4.2、不指定xib创建控制器
+    //加载xib的顺序：
+    //在没有指定xib文件名时控制器先查找没有Controller后缀同名的xib文件，
+    //查找不到时在查找同名的xib文件
+    //PS：xib文件要能被查找到必须先在xib文件的属性界面中中指定class为目标控制器。
+    WithXibViewController *vc = [[WithXibViewController alloc]init];
     
     //3、设置根控制器
     window.rootViewController = vc;
