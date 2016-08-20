@@ -16,8 +16,14 @@
 
 @end
 @interface KBToolBar : UIToolbar
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *previewButton;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextButton;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @property(nonatomic, strong)id<KBToolBarDelegate> kbDelegate;
+
 + (instancetype)kbtoolBar;
 
 

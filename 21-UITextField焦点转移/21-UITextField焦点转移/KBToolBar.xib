@@ -28,6 +28,11 @@
                     </connections>
                 </barButtonItem>
             </items>
+            <connections>
+                <outlet property="doneButton" destination="N1Z-Y8-JDT" id="7cR-2q-iVY"/>
+                <outlet property="nextButton" destination="cNE-3g-9ul" id="BJI-xC-W9J"/>
+                <outlet property="previewButton" destination="JMk-82-lkw" id="LZC-pQ-ac8"/>
+            </connections>
             <point key="canvasLocation" x="331" y="199"/>
         </toolbar>
     </objects>

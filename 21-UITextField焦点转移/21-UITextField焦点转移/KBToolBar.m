@@ -11,7 +11,7 @@
 @implementation KBToolBar
 
 + (instancetype)kbtoolBar{
-    return [[[NSBundle mainBundle]loadNibNamed:@"KBToolBar.h" owner:nil options:nil]lastObject];
+    return [[[NSBundle mainBundle]loadNibNamed:@"KBToolBar" owner:nil options:nil]lastObject];
 }
 
 - (IBAction)toolBarButtonClick:(UIBarButtonItem *)sender {
