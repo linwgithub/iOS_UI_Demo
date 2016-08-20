@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351CBDA41D6750A300913F75 /* SBOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CBDA31D6750A300913F75 /* SBOneViewController.m */; };
+		351CBDA71D6750B800913F75 /* SBTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CBDA61D6750B800913F75 /* SBTwoViewController.m */; };
+		351CBDAA1D6750BF00913F75 /* SBThereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CBDA91D6750BF00913F75 /* SBThereViewController.m */; };
 		35E7FFAE1D6737D800D1AF2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7FFAD1D6737D800D1AF2B /* main.m */; };
 		35E7FFB11D6737D900D1AF2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7FFB01D6737D900D1AF2B /* AppDelegate.m */; };
 		35E7FFB41D6737D900D1AF2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7FFB31D6737D900D1AF2B /* ViewController.m */; };
@@ -23,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		351CBDA21D6750A300913F75 /* SBOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBOneViewController.h; sourceTree = "<group>"; };
+		351CBDA31D6750A300913F75 /* SBOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBOneViewController.m; sourceTree = "<group>"; };
+		351CBDA51D6750B800913F75 /* SBTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTwoViewController.h; sourceTree = "<group>"; };
+		351CBDA61D6750B800913F75 /* SBTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTwoViewController.m; sourceTree = "<group>"; };
+		351CBDA81D6750BF00913F75 /* SBThereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBThereViewController.h; sourceTree = "<group>"; };
+		351CBDA91D6750BF00913F75 /* SBThereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBThereViewController.m; sourceTree = "<group>"; };
 		35E7FFA91D6737D800D1AF2B /* 20-导航控制器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20-导航控制器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E7FFAD1D6737D800D1AF2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35E7FFAF1D6737D800D1AF2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +103,12 @@
 				35E7FFD11D673CAB00D1AF2B /* ThereViewController.m */,
 				35E7FFD21D673CAB00D1AF2B /* ThereViewController.xib */,
 				35E7FFD51D67465A00D1AF2B /* CusStoryboard.storyboard */,
+				351CBDA21D6750A300913F75 /* SBOneViewController.h */,
+				351CBDA31D6750A300913F75 /* SBOneViewController.m */,
+				351CBDA51D6750B800913F75 /* SBTwoViewController.h */,
+				351CBDA61D6750B800913F75 /* SBTwoViewController.m */,
+				351CBDA81D6750BF00913F75 /* SBThereViewController.h */,
+				351CBDA91D6750BF00913F75 /* SBThereViewController.m */,
 			);
 			path = "20-导航控制器";
 			sourceTree = "<group>";
@@ -185,7 +200,10 @@
 				35E7FFD31D673CAB00D1AF2B /* ThereViewController.m in Sources */,
 				35E7FFB41D6737D900D1AF2B /* ViewController.m in Sources */,
 				35E7FFB11D6737D900D1AF2B /* AppDelegate.m in Sources */,
+				351CBDA41D6750A300913F75 /* SBOneViewController.m in Sources */,
 				35E7FFCE1D673A0000D1AF2B /* TwoViewController.m in Sources */,
+				351CBDA71D6750B800913F75 /* SBTwoViewController.m in Sources */,
+				351CBDAA1D6750BF00913F75 /* SBThereViewController.m in Sources */,
 				35E7FFAE1D6737D800D1AF2B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +351,7 @@
 				35E7FFC21D6737D900D1AF2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

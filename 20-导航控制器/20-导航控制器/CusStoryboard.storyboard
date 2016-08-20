@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--One View Controller-->
         <scene sceneID="xTm-QP-gG5">
             <objects>
-                <viewController id="bDr-Gb-3S6" sceneMemberID="viewController">
+                <viewController id="bDr-Gb-3S6" customClass="SBOneViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Hq-8V-wzo"/>
                         <viewControllerLayoutGuide type="bottom" id="qb5-eV-ne3"/>
@@ -28,9 +29,6 @@
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="28" width="400" height="44"/>
-                                </variation>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBV-gM-SSY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -44,16 +42,31 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SAn-YB-l6u" firstAttribute="top" secondItem="6Hq-8V-wzo" secondAttribute="bottom" constant="8" id="D4Q-JI-ln0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SAn-YB-l6u" secondAttribute="trailing" constant="-20" id="uK1-zf-l8x"/>
+                            <constraint firstItem="SAn-YB-l6u" firstAttribute="leading" secondItem="xfC-zB-INL" secondAttribute="leadingMargin" constant="-20" id="udi-9j-5Hi"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="SAn-YB-l6u"/>
                                 <exclude reference="oBV-gM-SSY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="D4Q-JI-ln0"/>
+                                <exclude reference="uK1-zf-l8x"/>
+                                <exclude reference="udi-9j-5Hi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="SAn-YB-l6u"/>
                                 <include reference="oBV-gM-SSY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="D4Q-JI-ln0"/>
+                                <include reference="uK1-zf-l8x"/>
+                                <include reference="udi-9j-5Hi"/>
                             </mask>
                         </variation>
                     </view>
@@ -66,18 +79,24 @@
         <!--Title-->
         <scene sceneID="TIz-TG-mZe">
             <objects>
-                <viewController id="1dx-ID-HoM" sceneMemberID="viewController">
+                <viewController id="1dx-ID-HoM" customClass="SBThereViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xdv-7P-ctE"/>
                         <viewControllerLayoutGuide type="bottom" id="hdA-GU-7sC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WBl-Wq-TQV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csw-s1-dAf">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="第二个控制器" id="Gp6-Td-oFE">
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="U7N-mt-XkC">
+                                            <connections>
+                                                <segue destination="bDr-Gb-3S6" kind="modal" id="Xdc-t9-O5w"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="第三个" id="bh1-3N-NDB">
                                             <connections>
                                                 <segue destination="9yQ-iL-0Yc" kind="modal" id="gWI-DT-4nf"/>
@@ -85,20 +104,32 @@
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-10" y="34" width="400" height="44"/>
-                                </variation>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="csw-s1-dAf" firstAttribute="top" secondItem="Xdv-7P-ctE" secondAttribute="bottom" constant="8" id="56R-Rf-a95"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="csw-s1-dAf" secondAttribute="trailing" constant="-20" id="U6Y-E5-2Rb"/>
+                            <constraint firstItem="csw-s1-dAf" firstAttribute="leading" secondItem="WBl-Wq-TQV" secondAttribute="leadingMargin" constant="-20" id="wz3-mT-G57"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="csw-s1-dAf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="56R-Rf-a95"/>
+                                <exclude reference="U6Y-E5-2Rb"/>
+                                <exclude reference="wz3-mT-G57"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="csw-s1-dAf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="56R-Rf-a95"/>
+                                <include reference="U6Y-E5-2Rb"/>
+                                <include reference="wz3-mT-G57"/>
                             </mask>
                         </variation>
                     </view>
@@ -108,42 +139,55 @@
             </objects>
             <point key="canvasLocation" x="990" y="242"/>
         </scene>
-        <!--View Controller-->
+        <!--There View Controller-->
         <scene sceneID="pG6-u2-tf9">
             <objects>
-                <viewController id="9yQ-iL-0Yc" sceneMemberID="viewController">
+                <viewController id="9yQ-iL-0Yc" customClass="SBThereViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tp5-tn-P5j"/>
                         <viewControllerLayoutGuide type="bottom" id="9nO-01-xf9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oEv-Ib-bj4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJ5-nx-gin">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="第三个控制器" id="Q59-Jf-KNo">
-                                        <barButtonItem key="leftBarButtonItem" title="返回第一个" id="FLY-IN-H48">
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="FLY-IN-H48">
                                             <connections>
-                                                <segue destination="bDr-Gb-3S6" kind="modal" id="lK2-aW-voo"/>
+                                                <segue destination="1dx-ID-HoM" kind="modal" id="hKl-qP-Vir"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-15" y="34" width="400" height="44"/>
-                                </variation>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oJ5-nx-gin" secondAttribute="trailing" constant="-20" id="DU7-mN-fdd"/>
+                            <constraint firstItem="oJ5-nx-gin" firstAttribute="leading" secondItem="oEv-Ib-bj4" secondAttribute="leadingMargin" constant="-20" id="lJx-k2-kb4"/>
+                            <constraint firstItem="oJ5-nx-gin" firstAttribute="top" secondItem="Tp5-tn-P5j" secondAttribute="bottom" constant="8" id="mPw-jA-11Z"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="oJ5-nx-gin"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="DU7-mN-fdd"/>
+                                <exclude reference="lJx-k2-kb4"/>
+                                <exclude reference="mPw-jA-11Z"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="oJ5-nx-gin"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="DU7-mN-fdd"/>
+                                <include reference="lJx-k2-kb4"/>
+                                <include reference="mPw-jA-11Z"/>
                             </mask>
                         </variation>
                     </view>
@@ -155,6 +199,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="hKl-qP-Vir"/>
         <segue reference="lVB-Xr-Qpd"/>
     </inferredMetricsTieBreakers>
 </document>

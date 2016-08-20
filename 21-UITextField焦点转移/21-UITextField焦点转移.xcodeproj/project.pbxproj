@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35C7DD041D684D080013FB38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C7DD031D684D080013FB38 /* main.m */; };
+		35C7DD071D684D080013FB38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C7DD061D684D080013FB38 /* AppDelegate.m */; };
+		35C7DD0A1D684D080013FB38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C7DD091D684D080013FB38 /* ViewController.m */; };
+		35C7DD0D1D684D080013FB38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C7DD0B1D684D080013FB38 /* Main.storyboard */; };
+		35C7DD0F1D684D080013FB38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C7DD0E1D684D080013FB38 /* Assets.xcassets */; };
+		35C7DD121D684D080013FB38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C7DD101D684D080013FB38 /* LaunchScreen.storyboard */; };
+		35C7DD1B1D684D580013FB38 /* KBToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C7DD1A1D684D580013FB38 /* KBToolBar.m */; };
+		35C7DD1D1D684D6D0013FB38 /* KBToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C7DD1C1D684D6D0013FB38 /* KBToolBar.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35C7DCFF1D684D080013FB38 /* 21-UITextField焦点转移.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "21-UITextField焦点转移.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C7DD031D684D080013FB38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35C7DD051D684D080013FB38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35C7DD061D684D080013FB38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35C7DD081D684D080013FB38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		35C7DD091D684D080013FB38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35C7DD0C1D684D080013FB38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35C7DD0E1D684D080013FB38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35C7DD111D684D080013FB38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35C7DD131D684D080013FB38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C7DD191D684D580013FB38 /* KBToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBToolBar.h; sourceTree = "<group>"; };
+		35C7DD1A1D684D580013FB38 /* KBToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBToolBar.m; sourceTree = "<group>"; };
+		35C7DD1C1D684D6D0013FB38 /* KBToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBToolBar.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35C7DCFC1D684D080013FB38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35C7DCF61D684D080013FB38 = {
+			isa = PBXGroup;
+			children = (
+				35C7DD011D684D080013FB38 /* 21-UITextField焦点转移 */,
+				35C7DD001D684D080013FB38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35C7DD001D684D080013FB38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35C7DCFF1D684D080013FB38 /* 21-UITextField焦点转移.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35C7DD011D684D080013FB38 /* 21-UITextField焦点转移 */ = {
+			isa = PBXGroup;
+			children = (
+				35C7DD051D684D080013FB38 /* AppDelegate.h */,
+				35C7DD061D684D080013FB38 /* AppDelegate.m */,
+				35C7DD081D684D080013FB38 /* ViewController.h */,
+				35C7DD091D684D080013FB38 /* ViewController.m */,
+				35C7DD0B1D684D080013FB38 /* Main.storyboard */,
+				35C7DD0E1D684D080013FB38 /* Assets.xcassets */,
+				35C7DD101D684D080013FB38 /* LaunchScreen.storyboard */,
+				35C7DD131D684D080013FB38 /* Info.plist */,
+				35C7DD021D684D080013FB38 /* Supporting Files */,
+				35C7DD191D684D580013FB38 /* KBToolBar.h */,
+				35C7DD1A1D684D580013FB38 /* KBToolBar.m */,
+				35C7DD1C1D684D6D0013FB38 /* KBToolBar.xib */,
+			);
+			path = "21-UITextField焦点转移";
+			sourceTree = "<group>";
+		};
+		35C7DD021D684D080013FB38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35C7DD031D684D080013FB38 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35C7DCFE1D684D080013FB38 /* 21-UITextField焦点转移 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C7DD161D684D080013FB38 /* Build configuration list for PBXNativeTarget "21-UITextField焦点转移" */;
+			buildPhases = (
+				35C7DCFB1D684D080013FB38 /* Sources */,
+				35C7DCFC1D684D080013FB38 /* Frameworks */,
+				35C7DCFD1D684D080013FB38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "21-UITextField焦点转移";
+			productName = "21-UITextField焦点转移";
+			productReference = 35C7DCFF1D684D080013FB38 /* 21-UITextField焦点转移.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35C7DCF71D684D080013FB38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = linw;
+				TargetAttributes = {
+					35C7DCFE1D684D080013FB38 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = KQ93P39MFH;
+					};
+				};
+			};
+			buildConfigurationList = 35C7DCFA1D684D080013FB38 /* Build configuration list for PBXProject "21-UITextField焦点转移" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35C7DCF61D684D080013FB38;
+			productRefGroup = 35C7DD001D684D080013FB38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35C7DCFE1D684D080013FB38 /* 21-UITextField焦点转移 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35C7DCFD1D684D080013FB38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C7DD121D684D080013FB38 /* LaunchScreen.storyboard in Resources */,
+				35C7DD0F1D684D080013FB38 /* Assets.xcassets in Resources */,
+				35C7DD1D1D684D6D0013FB38 /* KBToolBar.xib in Resources */,
+				35C7DD0D1D684D080013FB38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35C7DCFB1D684D080013FB38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C7DD0A1D684D080013FB38 /* ViewController.m in Sources */,
+				35C7DD071D684D080013FB38 /* AppDelegate.m in Sources */,
+				35C7DD1B1D684D580013FB38 /* KBToolBar.m in Sources */,
+				35C7DD041D684D080013FB38 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35C7DD0B1D684D080013FB38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35C7DD0C1D684D080013FB38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35C7DD101D684D080013FB38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35C7DD111D684D080013FB38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35C7DD141D684D080013FB38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35C7DD151D684D080013FB38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35C7DD171D684D080013FB38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "21-UITextField焦点转移/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "linw.-1-UITextField----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		35C7DD181D684D080013FB38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "21-UITextField焦点转移/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "linw.-1-UITextField----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35C7DCFA1D684D080013FB38 /* Build configuration list for PBXProject "21-UITextField焦点转移" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C7DD141D684D080013FB38 /* Debug */,
+				35C7DD151D684D080013FB38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C7DD161D684D080013FB38 /* Build configuration list for PBXNativeTarget "21-UITextField焦点转移" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C7DD171D684D080013FB38 /* Debug */,
+				35C7DD181D684D080013FB38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35C7DCF71D684D080013FB38 /* Project object */;
+}
