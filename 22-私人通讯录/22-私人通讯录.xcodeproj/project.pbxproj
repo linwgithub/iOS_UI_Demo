@@ -20,6 +20,7 @@
 		3553F1F01D697A9A0045CFA1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3553F1ED1D697A9A0045CFA1 /* MBProgressHUD.bundle */; };
 		3553F1F31D69E26B0045CFA1 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1F21D69E26B0045CFA1 /* AddContactViewController.m */; };
 		3553F1F71D69F4E20045CFA1 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1F61D69F4E20045CFA1 /* Contact.m */; };
+		3553F1FA1D69FD620045CFA1 /* EditViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1F91D69FD620045CFA1 /* EditViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		3553F1F21D69E26B0045CFA1 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
 		3553F1F51D69F4E20045CFA1 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		3553F1F61D69F4E20045CFA1 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		3553F1F81D69FD620045CFA1 /* EditViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewViewController.h; sourceTree = "<group>"; };
+		3553F1F91D69FD620045CFA1 /* EditViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				3553F1E61D68B41F0045CFA1 /* ContactsTableViewController.m */,
 				3553F1F11D69E26B0045CFA1 /* AddContactViewController.h */,
 				3553F1F21D69E26B0045CFA1 /* AddContactViewController.m */,
+				3553F1F81D69FD620045CFA1 /* EditViewViewController.h */,
+				3553F1F91D69FD620045CFA1 /* EditViewViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3553F1EE1D697A9A0045CFA1 /* MBProgressHUD+MJ.m in Sources */,
+				3553F1FA1D69FD620045CFA1 /* EditViewViewController.m in Sources */,
 				3553F1F31D69E26B0045CFA1 /* AddContactViewController.m in Sources */,
 				3553F1E11D68B3B10045CFA1 /* LoginViewController.m in Sources */,
 				3553F1CD1D688EC10045CFA1 /* ViewController.m in Sources */,

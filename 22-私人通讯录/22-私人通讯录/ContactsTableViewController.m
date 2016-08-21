@@ -53,35 +53,39 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"contactID";
+    static NSString *ID = @"contactCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+//    }
     Contact *contact = self.contacts[indexPath.row];
     cell.textLabel.text = contact.name;
     cell.detailTextLabel.text = contact.phone;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Contact *contact = self.contacts[indexPath.row];
+//    [self performSegueWithIdentifier:@"editview" sender:contact];
 }
 
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    //1、获取目标控制器
-    AddContactViewController *addVc = segue.destinationViewController;
-    //2、成为代理
-    addVc.delegate = self;
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    id vc = segue.destinationViewController;
+    if ([vc isKindOfClass:[AddContactViewController class]]) {
+        //1、获取目标控制器
+        AddContactViewController *addVc = (AddContactViewController *)vc;
+        //2、成为代理
+        addVc.delegate = self;
+    }
+
 }
 
 /**
  *  实现添加联系人界面的代理方法
  */
-//- (void)addContactWithController:(AddContactViewController *)controller withContactName:(NSString *)name phone:(NSString *)phone
-//{
-//    NSLog(@"%@,%@",name,phone);
-//}
-
 - (void)addContactWithController:(AddContactViewController *)controller withContact:(Contact *)contact
 {
     NSLog(@"%@,%@",contact.name,contact.phone);

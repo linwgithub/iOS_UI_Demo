@@ -207,11 +207,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UIt-1z-NlP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="contactCell" id="UIt-1z-NlP">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UIt-1z-NlP" id="7mf-Zt-YcR">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="RAB-EG-Y80" kind="push" id="d2q-ID-CXI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -235,6 +238,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoJ-ZE-4SM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1206" y="-36"/>
+        </scene>
+        <!--编辑联系人-->
+        <scene sceneID="pLr-OY-eyQ">
+            <objects>
+                <viewController id="RAB-EG-Y80" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="biy-z4-BHH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cbm-hh-a5G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6FZ-df-mVe">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="编辑联系人" id="rBD-mo-yaQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajv-Y2-thC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999.5" y="231"/>
         </scene>
         <!--添加-->
         <scene sceneID="X2y-ns-QQq">
@@ -346,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RW8-WT-xdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2070" y="-301"/>
+            <point key="canvasLocation" x="1993.5" y="-416"/>
         </scene>
     </scenes>
 </document>
