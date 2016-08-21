@@ -18,6 +18,7 @@
 		3553F1EE1D697A9A0045CFA1 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1EA1D697A9A0045CFA1 /* MBProgressHUD+MJ.m */; };
 		3553F1EF1D697A9A0045CFA1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1EC1D697A9A0045CFA1 /* MBProgressHUD.m */; };
 		3553F1F01D697A9A0045CFA1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3553F1ED1D697A9A0045CFA1 /* MBProgressHUD.bundle */; };
+		3553F1F31D69E26B0045CFA1 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1F21D69E26B0045CFA1 /* AddContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		3553F1EB1D697A9A0045CFA1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		3553F1EC1D697A9A0045CFA1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		3553F1ED1D697A9A0045CFA1 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		3553F1F11D69E26B0045CFA1 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		3553F1F21D69E26B0045CFA1 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				3553F1E01D68B3B10045CFA1 /* LoginViewController.m */,
 				3553F1E51D68B41F0045CFA1 /* ContactsTableViewController.h */,
 				3553F1E61D68B41F0045CFA1 /* ContactsTableViewController.m */,
+				3553F1F11D69E26B0045CFA1 /* AddContactViewController.h */,
+				3553F1F21D69E26B0045CFA1 /* AddContactViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3553F1EE1D697A9A0045CFA1 /* MBProgressHUD+MJ.m in Sources */,
+				3553F1F31D69E26B0045CFA1 /* AddContactViewController.m in Sources */,
 				3553F1E11D68B3B10045CFA1 /* LoginViewController.m in Sources */,
 				3553F1CD1D688EC10045CFA1 /* ViewController.m in Sources */,
 				3553F1E71D68B41F0045CFA1 /* ContactsTableViewController.m in Sources */,

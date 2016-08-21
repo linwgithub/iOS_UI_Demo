@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qnt-eY-DQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-33" y="-36"/>
+            <point key="canvasLocation" x="-279" y="-36"/>
         </scene>
         <!--登录-->
         <scene sceneID="vu4-yd-iTJ">
@@ -196,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMf-cp-tng" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741" y="-36"/>
+            <point key="canvasLocation" x="456" y="-36"/>
         </scene>
         <!--联系人列表-->
         <scene sceneID="QUz-gb-i5a">
@@ -224,12 +225,128 @@
                                 <action selector="loginout:" destination="eIq-xt-Wvj" id="z0C-rk-ci0"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Skq-9U-0AG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Skq-9U-0AG">
+                            <connections>
+                                <segue destination="glh-2G-dV0" kind="push" id="Nru-9F-ggu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoJ-ZE-4SM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1587" y="-347"/>
+            <point key="canvasLocation" x="1206" y="-36"/>
+        </scene>
+        <!--添加-->
+        <scene sceneID="X2y-ns-QQq">
+            <objects>
+                <viewController id="glh-2G-dV0" customClass="AddContactViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pCU-xB-C7D"/>
+                        <viewControllerLayoutGuide type="bottom" id="SKI-Xw-z83"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l9m-Rv-Ows">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8y-JH-zE7">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="99" y="117" width="34" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Typing user name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Gfg-Aj-R8Y">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="153" y="113" width="182" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJn-eA-G4k">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="99" y="182" width="34" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Typing yser number" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="1V2-LW-dej">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="153" y="178" width="182" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daI-ak-W6g">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FOs-Mu-diY"/>
+                                    <constraint firstAttribute="width" constant="63" id="tz7-mg-oqk"/>
+                                </constraints>
+                                <state key="normal" title="添加"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FOs-Mu-diY"/>
+                                        <exclude reference="tz7-mg-oqk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FOs-Mu-diY"/>
+                                        <include reference="tz7-mg-oqk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="addContact:" destination="glh-2G-dV0" eventType="touchUpInside" id="tSk-XU-9jZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="daI-ak-W6g" firstAttribute="centerX" secondItem="l9m-Rv-Ows" secondAttribute="centerX" id="2H0-g6-BIi"/>
+                            <constraint firstItem="daI-ak-W6g" firstAttribute="top" secondItem="l9m-Rv-Ows" secondAttribute="topMargin" constant="253" id="4CP-uo-Zcu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="R8y-JH-zE7"/>
+                                <exclude reference="Gfg-Aj-R8Y"/>
+                                <exclude reference="VJn-eA-G4k"/>
+                                <exclude reference="1V2-LW-dej"/>
+                                <exclude reference="daI-ak-W6g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2H0-g6-BIi"/>
+                                <exclude reference="4CP-uo-Zcu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="R8y-JH-zE7"/>
+                                <include reference="Gfg-Aj-R8Y"/>
+                                <include reference="VJn-eA-G4k"/>
+                                <include reference="1V2-LW-dej"/>
+                                <include reference="daI-ak-W6g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2H0-g6-BIi"/>
+                                <include reference="4CP-uo-Zcu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="添加" id="a2h-zb-QbZ"/>
+                    <connections>
+                        <outlet property="addBtn" destination="daI-ak-W6g" id="GLn-ch-KEv"/>
+                        <outlet property="nameField" destination="Gfg-Aj-R8Y" id="EhM-NK-h6K"/>
+                        <outlet property="numberField" destination="1V2-LW-dej" id="BtN-L0-F1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RW8-WT-xdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2070" y="-301"/>
         </scene>
     </scenes>
 </document>

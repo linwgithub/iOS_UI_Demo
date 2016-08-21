@@ -7,8 +7,9 @@
 //
 
 #import "ContactsTableViewController.h"
+#import "AddContactViewController.h"
 
-@interface ContactsTableViewController ()<UIActionSheetDelegate>
+@interface ContactsTableViewController ()<UIActionSheetDelegate, AddContectDelegate>
 
 @end
 
@@ -103,14 +104,23 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    AddContactViewController *addVc = segue.destinationViewController;
+    addVc.delegate = self;
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
+/**
+ *  实现添加联系人界面的代理
+ */
+- (void)addContactWithController:(AddContactViewController *)controller withContactName:(NSString *)name phone:(NSString *)phone
+{
+    NSLog(@"%@,%@",name,phone);
+}
 
 @end
