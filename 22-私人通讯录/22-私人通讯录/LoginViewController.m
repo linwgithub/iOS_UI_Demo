@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "MBProgressHUD+MJ.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
@@ -39,6 +40,22 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.nameField];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.pwdField];
+}
+- (IBAction)loginBtn:(id)sender {
+    if (![self.nameField.text isEqualToString:@"lw"]) {
+        [MBProgressHUD showError:@"账号错误"];
+        return;
+    }
+    if (![self.pwdField.text isEqualToString:@"123"]) {
+        [MBProgressHUD showError:@"密码错误"];
+        return;
+    }
+
+    [MBProgressHUD showMessage:@"正在登录..."];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUD];
+        [self performSegueWithIdentifier:@"loginsegue" sender:nil];
+    });
 }
 
 - (void)textChange{

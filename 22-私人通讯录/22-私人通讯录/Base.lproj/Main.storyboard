@@ -53,7 +53,7 @@
                                             <rect key="frame" x="17" y="92" width="60" height="21"/>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Typing your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GsK-2y-tWb">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lw" borderStyle="roundedRect" placeholder="Typing your name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GsK-2y-tWb">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -61,7 +61,7 @@
                                             <rect key="frame" x="105" y="42" width="182" height="30"/>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Typing your pass" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O46-JY-vxI">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" borderStyle="roundedRect" placeholder="Typing your pass" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="O46-JY-vxI">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -69,14 +69,14 @@
                                             <rect key="frame" x="105" y="88" width="182" height="30"/>
                                         </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YP-Mb-wmU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YP-Mb-wmU">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" title="登录"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="82" y="184" width="30" height="30"/>
                                         </variation>
                                         <connections>
-                                            <segue destination="eIq-xt-Wvj" kind="push" id="YhM-Aw-rPZ"/>
+                                            <action selector="loginBtn:" destination="Ns2-6n-cjL" eventType="touchUpInside" id="Q87-sJ-GK1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9g7-jG-qo0">
@@ -191,6 +191,7 @@
                         <outlet property="nameField" destination="GsK-2y-tWb" id="goo-Xa-byN"/>
                         <outlet property="pwdField" destination="O46-JY-vxI" id="UQF-dh-Xta"/>
                         <outlet property="pwdswitch" destination="RtS-Mx-HwT" id="K6A-sQ-ruu"/>
+                        <segue destination="eIq-xt-Wvj" kind="push" identifier="loginsegue" id="MKb-ni-9vK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMf-cp-tng" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -228,7 +229,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoJ-ZE-4SM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441.5" y="-345"/>
+            <point key="canvasLocation" x="1587" y="-347"/>
         </scene>
     </scenes>
 </document>
