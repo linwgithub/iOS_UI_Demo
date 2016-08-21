@@ -86,6 +86,15 @@
                                             <rect key="frame" x="200" y="184" width="30" height="30"/>
                                         </variation>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="记住密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM9-RY-h6P">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="17" y="267" width="85" height="21"/>
+                                        </variation>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动登录：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKT-2S-Lgs">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -100,21 +109,18 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="110" y="311" width="51" height="31"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="loginSwitchChange:" destination="Ns2-6n-cjL" eventType="valueChanged" id="F0K-FG-ExH"/>
+                                        </connections>
                                     </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="记住密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM9-RY-h6P">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="17" y="267" width="85" height="21"/>
-                                        </variation>
-                                    </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-Mx-HwT">
                                         <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="110" y="262" width="51" height="31"/>
+                                            <rect key="frame" x="110" y="257" width="51" height="31"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="pwdSwitchChange:" destination="Ns2-6n-cjL" eventType="valueChanged" id="JcI-r9-FVo"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,9 +132,9 @@
                                         <exclude reference="O46-JY-vxI"/>
                                         <exclude reference="4YP-Mb-wmU"/>
                                         <exclude reference="9g7-jG-qo0"/>
+                                        <exclude reference="dM9-RY-h6P"/>
                                         <exclude reference="nKT-2S-Lgs"/>
                                         <exclude reference="r2C-bN-1L2"/>
-                                        <exclude reference="dM9-RY-h6P"/>
                                         <exclude reference="RtS-Mx-HwT"/>
                                     </mask>
                                 </variation>
@@ -140,9 +146,9 @@
                                         <include reference="O46-JY-vxI"/>
                                         <include reference="4YP-Mb-wmU"/>
                                         <include reference="9g7-jG-qo0"/>
+                                        <include reference="dM9-RY-h6P"/>
                                         <include reference="nKT-2S-Lgs"/>
                                         <include reference="r2C-bN-1L2"/>
-                                        <include reference="dM9-RY-h6P"/>
                                         <include reference="RtS-Mx-HwT"/>
                                     </mask>
                                 </variation>
@@ -181,8 +187,10 @@
                     <navigationItem key="navigationItem" title="登录" id="yI6-Ce-eJz"/>
                     <connections>
                         <outlet property="loginBtn" destination="4YP-Mb-wmU" id="TZM-YY-5ja"/>
+                        <outlet property="loginswitch" destination="r2C-bN-1L2" id="u0e-Gh-wEE"/>
                         <outlet property="nameField" destination="GsK-2y-tWb" id="goo-Xa-byN"/>
                         <outlet property="pwdField" destination="O46-JY-vxI" id="UQF-dh-Xta"/>
+                        <outlet property="pwdswitch" destination="RtS-Mx-HwT" id="K6A-sQ-ruu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMf-cp-tng" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,7 +218,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="联系人列表" id="19j-1U-blU">
-                        <barButtonItem key="leftBarButtonItem" title="注销" id="DbX-D8-JLt"/>
+                        <barButtonItem key="leftBarButtonItem" title="注销" id="DbX-D8-JLt">
+                            <connections>
+                                <action selector="loginout:" destination="eIq-xt-Wvj" id="z0C-rk-ci0"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Skq-9U-0AG"/>
                     </navigationItem>
                 </tableViewController>

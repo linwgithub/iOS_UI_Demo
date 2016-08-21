@@ -8,11 +8,29 @@
 
 #import "ContactsTableViewController.h"
 
-@interface ContactsTableViewController ()
+@interface ContactsTableViewController ()<UIActionSheetDelegate>
 
 @end
 
 @implementation ContactsTableViewController
+
+- (IBAction)loginout:(UIBarButtonItem *)sender {
+    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"确定退出登录？" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [sheet showInView:self.view];
+}
+
+/**
+ *  UIActionSheet的代理方法
+ *
+ *  @param actionSheet <#actionSheet description#>
+ *  @param buttonIndex <#buttonIndex description#>
+ */
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0) {
+        NSLog(@"确定");
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
