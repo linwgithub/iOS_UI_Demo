@@ -22,13 +22,13 @@
 
 - (IBAction)pwdSwitchChange:(UISwitch *)sender {
     if (!self.pwdswitch.isOn) {
-        self.loginswitch.on = NO;
+        [self.loginswitch setOn:NO animated:YES];
     }
 }
 
 - (IBAction)loginSwitchChange:(id)sender {
     if (self.loginswitch.isOn) {
-        self.pwdswitch.on = YES;
+        [self.pwdswitch setOn:YES animated:YES];
     }
 }
 
