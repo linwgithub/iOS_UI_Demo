@@ -20,11 +20,17 @@
 @implementation AddContactViewController
 - (IBAction)addContact:(UIButton *)sender
 {
-    [self.navigationController popoverPresentationController];
+    [self.navigationController popViewControllerAnimated:YES];
     
-    if ([self.delegate respondsToSelector:@selector(addContactWithController:withContactName:phone:)]) {
-        [self.delegate addContactWithController:self withContactName:self.nameField.text phone:self.numberField.text];
+    if ([self.delegate respondsToSelector:@selector(addContactWithController:withContact:)]) {
+        Contact *contact = [[Contact alloc] init];
+        contact.name = self.nameField.text;
+        contact.phone = self.numberField.text;
+        [self.delegate addContactWithController:self withContact:contact];
     }
+//    if ([self.delegate respondsToSelector:@selector(addContactWithController:withContactName:phone:)]) {
+//        [self.delegate addContactWithController:self withContactName:self.nameField.text phone:self.numberField.text];
+//    }
 }
 
 - (void)viewDidLoad {

@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contact.h"
+
 @class AddContactViewController;
 
 @protocol AddContectDelegate <NSObject>
 
 @optional
 - (void)addContactWithController:(AddContactViewController *)controller withContactName:(NSString *)name phone:(NSString *)phone;
+
+- (void)addContactWithController:(AddContactViewController *)controller withContact:(Contact *) contact;
 
 @end
 @interface AddContactViewController : UIViewController
