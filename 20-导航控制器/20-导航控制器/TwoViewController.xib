@@ -100,12 +100,12 @@
                     <exclude reference="gbC-BU-yQJ"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="d5b-K1-Mdh"/>
-                    <exclude reference="gHE-zV-CAV"/>
                     <exclude reference="aUE-gB-e7t"/>
                     <exclude reference="k6f-cW-t1f"/>
                     <exclude reference="heg-cv-7KF"/>
                     <exclude reference="zwU-Ah-75x"/>
+                    <exclude reference="d5b-K1-Mdh"/>
+                    <exclude reference="gHE-zV-CAV"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -115,12 +115,12 @@
                     <include reference="gbC-BU-yQJ"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="d5b-K1-Mdh"/>
-                    <include reference="gHE-zV-CAV"/>
                     <include reference="aUE-gB-e7t"/>
                     <include reference="k6f-cW-t1f"/>
                     <include reference="heg-cv-7KF"/>
                     <include reference="zwU-Ah-75x"/>
+                    <include reference="d5b-K1-Mdh"/>
+                    <include reference="gHE-zV-CAV"/>
                 </mask>
             </variation>
         </view>

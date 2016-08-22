@@ -74,10 +74,10 @@
                     <exclude reference="qMa-vy-xt3"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="21b-TO-Ud3"/>
-                    <exclude reference="4o6-6H-Co0"/>
                     <exclude reference="7GR-Pu-Jng"/>
                     <exclude reference="V5B-HC-kQz"/>
+                    <exclude reference="21b-TO-Ud3"/>
+                    <exclude reference="4o6-6H-Co0"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -86,10 +86,10 @@
                     <include reference="qMa-vy-xt3"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="21b-TO-Ud3"/>
-                    <include reference="4o6-6H-Co0"/>
                     <include reference="7GR-Pu-Jng"/>
                     <include reference="V5B-HC-kQz"/>
+                    <include reference="21b-TO-Ud3"/>
+                    <include reference="4o6-6H-Co0"/>
                 </mask>
             </variation>
         </view>
