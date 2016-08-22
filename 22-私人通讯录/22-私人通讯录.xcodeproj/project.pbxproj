@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352F19FB1D6AC80400F063C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352F19F91D6AC80400F063C8 /* Main.storyboard */; };
 		3553F1C71D688EC10045CFA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1C61D688EC10045CFA1 /* main.m */; };
 		3553F1CA1D688EC10045CFA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1C91D688EC10045CFA1 /* AppDelegate.m */; };
 		3553F1CD1D688EC10045CFA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1CC1D688EC10045CFA1 /* ViewController.m */; };
-		3553F1D01D688EC10045CFA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3553F1CE1D688EC10045CFA1 /* Main.storyboard */; };
 		3553F1D21D688EC10045CFA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3553F1D11D688EC10045CFA1 /* Assets.xcassets */; };
 		3553F1D51D688EC10045CFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3553F1D31D688EC10045CFA1 /* LaunchScreen.storyboard */; };
 		3553F1E11D68B3B10045CFA1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1E01D68B3B10045CFA1 /* LoginViewController.m */; };
@@ -24,13 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		352F19FA1D6AC80400F063C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3553F1C21D688EC10045CFA1 /* 22-私人通讯录.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "22-私人通讯录.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3553F1C61D688EC10045CFA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3553F1C81D688EC10045CFA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3553F1C91D688EC10045CFA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3553F1CB1D688EC10045CFA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3553F1CC1D688EC10045CFA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3553F1CF1D688EC10045CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3553F1D11D688EC10045CFA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3553F1D41D688EC10045CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3553F1D61D688EC10045CFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,12 +81,12 @@
 		3553F1C41D688EC10045CFA1 /* 22-私人通讯录 */ = {
 			isa = PBXGroup;
 			children = (
+				352F19F91D6AC80400F063C8 /* Main.storyboard */,
 				3553F1DC1D68B3760045CFA1 /* class */,
 				3553F1C81D688EC10045CFA1 /* AppDelegate.h */,
 				3553F1C91D688EC10045CFA1 /* AppDelegate.m */,
 				3553F1CB1D688EC10045CFA1 /* ViewController.h */,
 				3553F1CC1D688EC10045CFA1 /* ViewController.m */,
-				3553F1CE1D688EC10045CFA1 /* Main.storyboard */,
 				3553F1D11D688EC10045CFA1 /* Assets.xcassets */,
 				3553F1D31D688EC10045CFA1 /* LaunchScreen.storyboard */,
 				3553F1D61D688EC10045CFA1 /* Info.plist */,
@@ -218,7 +218,7 @@
 				3553F1D51D688EC10045CFA1 /* LaunchScreen.storyboard in Resources */,
 				3553F1F01D697A9A0045CFA1 /* MBProgressHUD.bundle in Resources */,
 				3553F1D21D688EC10045CFA1 /* Assets.xcassets in Resources */,
-				3553F1D01D688EC10045CFA1 /* Main.storyboard in Resources */,
+				352F19FB1D6AC80400F063C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,10 +245,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3553F1CE1D688EC10045CFA1 /* Main.storyboard */ = {
+		352F19F91D6AC80400F063C8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3553F1CF1D688EC10045CFA1 /* Base */,
+				352F19FA1D6AC80400F063C8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -385,6 +385,7 @@
 				3553F1DB1D688EC10045CFA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

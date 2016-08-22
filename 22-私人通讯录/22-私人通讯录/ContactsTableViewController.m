@@ -8,6 +8,7 @@
 
 #import "ContactsTableViewController.h"
 #import "AddContactViewController.h"
+#import "EditViewViewController.h"
 #import "Contact.h"
 
 @interface ContactsTableViewController ()<UIActionSheetDelegate, AddContectDelegate>
@@ -65,11 +66,11 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    Contact *contact = self.contacts[indexPath.row];
-//    [self performSegueWithIdentifier:@"editview" sender:contact];
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    Contact *contact = self.contacts[indexPath.row];
+////    [self performSegueWithIdentifier:@"editview" sender:contact];
+//}
 
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -79,6 +80,10 @@
         AddContactViewController *addVc = (AddContactViewController *)vc;
         //2、成为代理
         addVc.delegate = self;
+    }else if([vc isKindOfClass:[EditViewViewController class]]){
+        EditViewViewController *etVc = (EditViewViewController *)vc;
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        etVc.contact = self.contacts[path.row];
     }
 
 }

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contact.h"
 
 @interface EditViewViewController : UIViewController
+
+@property (nonatomic, strong) Contact *contact;
 
 @end
