@@ -11,7 +11,7 @@
 #import "EditViewViewController.h"
 #import "Contact.h"
 
-@interface ContactsTableViewController ()<UIActionSheetDelegate, AddContectDelegate>
+@interface ContactsTableViewController ()<UIActionSheetDelegate, AddContectDelegate,EditViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *contacts;
 @end
@@ -84,8 +84,8 @@
         EditViewViewController *etVc = (EditViewViewController *)vc;
         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
         etVc.contact = self.contacts[path.row];
+        etVc.delegate = self;
     }
-
 }
 
 /**
@@ -100,4 +100,8 @@
     [self.tableView reloadData];
 }
 
+- (void)saveChangeContact:(EditViewViewController *)evVc contact:(Contact *)contact
+{
+    [self.tableView reloadData];
+}
 @end

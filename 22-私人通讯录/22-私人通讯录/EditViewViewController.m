@@ -47,6 +47,12 @@
 
 
 - (IBAction)saveClick:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(saveChangeContact:contact:)]) {
+        [self.navigationController popViewControllerAnimated:YES];
+        self.contact.name = self.nameField.text;
+        self.contact.phone = self.phoneField.text;
+        [self.delegate saveChangeContact:self contact:self.contact];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
