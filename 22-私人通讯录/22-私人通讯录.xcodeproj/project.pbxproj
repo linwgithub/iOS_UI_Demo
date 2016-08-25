@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		352F19FB1D6AC80400F063C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352F19F91D6AC80400F063C8 /* Main.storyboard */; };
+		354009501D6F349E00F799CE /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540094F1D6F349E00F799CE /* ContactTableViewCell.m */; };
 		3553F1C71D688EC10045CFA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1C61D688EC10045CFA1 /* main.m */; };
 		3553F1CA1D688EC10045CFA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1C91D688EC10045CFA1 /* AppDelegate.m */; };
 		3553F1CD1D688EC10045CFA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553F1CC1D688EC10045CFA1 /* ViewController.m */; };
@@ -25,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		352F19FA1D6AC80400F063C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3540094E1D6F349E00F799CE /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		3540094F1D6F349E00F799CE /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
 		3553F1C21D688EC10045CFA1 /* 22-私人通讯录.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "22-私人通讯录.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3553F1C61D688EC10045CFA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3553F1C81D688EC10045CFA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 		3553F1DE1D68B38F0045CFA1 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				3540094E1D6F349E00F799CE /* ContactTableViewCell.h */,
+				3540094F1D6F349E00F799CE /* ContactTableViewCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			files = (
 				3553F1EE1D697A9A0045CFA1 /* MBProgressHUD+MJ.m in Sources */,
 				3553F1FA1D69FD620045CFA1 /* EditViewViewController.m in Sources */,
+				354009501D6F349E00F799CE /* ContactTableViewCell.m in Sources */,
 				3553F1F31D69E26B0045CFA1 /* AddContactViewController.m in Sources */,
 				3553F1E11D68B3B10045CFA1 /* LoginViewController.m in Sources */,
 				3553F1CD1D688EC10045CFA1 /* ViewController.m in Sources */,

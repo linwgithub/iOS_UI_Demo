@@ -10,6 +10,7 @@
 #import "AddContactViewController.h"
 #import "EditViewViewController.h"
 #import "Contact.h"
+#import "ContactTableViewCell.h"
 
 @interface ContactsTableViewController ()<UIActionSheetDelegate, AddContectDelegate,EditViewDelegate>
 
@@ -54,15 +55,18 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"contactCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-//    }
-    Contact *contact = self.contacts[indexPath.row];
-    cell.textLabel.text = contact.name;
-    cell.detailTextLabel.text = contact.phone;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    static NSString *ID = @"contactCell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+////    if (cell == nil) {
+////        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+////    }
+//    Contact *contact = self.contacts[indexPath.row];
+//    cell.textLabel.text = contact.name;
+//    cell.detailTextLabel.text = contact.phone;
+//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    return cell;
+    ContactTableViewCell *cell = [ContactTableViewCell cellWithTableView:tableView];
+    cell.contact = self.contacts[indexPath.row];
     return cell;
 }
 
