@@ -18,9 +18,16 @@
 
 + (instancetype)cellWithTableView:(UITableView *)tableView
 {
+    //固若在storyboard中绑定cell，则创建cell的时候，一般过程是查看缓存池中有没有合适（标识符相同）的cell，没有的话再从storyboard中创建
+    //即cell是从storyboard中创建的
+    //PS:只要对象是通过Storyboard或者Xib创建，则不会调用init开头的方法，当init开头的方法是通过代码创建时才会调用(initWithCoder方法除外)。
+    
     return [tableView dequeueReusableCellWithIdentifier:@"contact"];
 }
 
+/**
+ *  对象从nib或storyboard创建的话会调用该方法
+ */
 - (void)awakeFromNib
 {
     UIView *divider = [[UIView alloc] init];
@@ -30,6 +37,9 @@
     self.divider = divider;
 }
 
+/**
+ *  当对象的frame发生变化时调用该方法
+ */
 - (void)layoutSubviews
 {
     [super layoutSubviews];

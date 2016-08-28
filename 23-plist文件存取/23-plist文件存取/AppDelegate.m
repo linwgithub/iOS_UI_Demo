@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  22-私人通讯录
+//  23-plist文件存取
 //
-//  Created by linw on 16/8/20.
+//  Created by linw on 16/8/28.
 //  Copyright © 2016年 linw. All rights reserved.
 //
 
@@ -17,7 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"%@",NSHomeDirectory());
     return YES;
 }
 
