@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -91,6 +92,29 @@
 
     
     NSLog(@"\nuser:%@\npwd:%@\nnumber:%ld\n",user,pwd,(long)number);
+}
+
+/**
+ *  通过coding归档文件
+ */
+- (void)saveByCoding
+{
+    NSString *path = @"/Users/linw/Desktop/codingfile/person.data";
+    Person *p = [[Person alloc]init];
+    p.name = @"linw";
+    p.age = 110;
+    
+    [NSKeyedArchiver archiveRootObject:p toFile:path];
+}
+
+/**
+ *  通过coding读档
+ */
+- (void)readByCoding
+{
+    NSString *path = @"/Users/linw/Desktop/codingfile/person.data";
+    Person *p =[NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    
 }
 
 - (void)viewDidLoad {
