@@ -17,11 +17,13 @@
 
 - (IBAction)saveData:(id)sender
 {
-    [self saveByPreferences];
+//    [self saveByPreferences];
+    [self saveByCoding];
 }
 
 - (IBAction)readData:(id)sender {
-    [self readByPreferences];
+//    [self readByPreferences];
+    [self readByCoding];
 }
 
 /**
@@ -114,7 +116,7 @@
 {
     NSString *path = @"/Users/linw/Desktop/codingfile/person.data";
     Person *p =[NSKeyedUnarchiver unarchiveObjectWithFile:path];
-    
+    NSLog(@"name:%@,age:%d",p.name,p.age);
 }
 
 - (void)viewDidLoad {
