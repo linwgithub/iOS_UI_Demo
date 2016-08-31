@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "Student.h"
 
 @interface ViewController ()
 
@@ -17,12 +18,12 @@
 
 - (IBAction)saveData:(id)sender
 {
-//    [self saveByPreferences];
+    //    [self saveByPreferences];
     [self saveByCoding];
 }
 
 - (IBAction)readData:(id)sender {
-//    [self readByPreferences];
+    //    [self readByPreferences];
     [self readByCoding];
 }
 
@@ -66,7 +67,7 @@
     //4、读取数据
     NSArray *dataArr = [NSArray arrayWithContentsOfFile:filePath];
     NSLog(@"%@",dataArr);
-
+    
 }
 
 - (void)saveByPreferences
@@ -91,7 +92,7 @@
     NSString *user = [defaults objectForKey:@"user"];
     NSString *pwd = [defaults objectForKey:@"pwd"];
     NSInteger number = [defaults integerForKey:@"number"];
-
+    
     
     NSLog(@"\nuser:%@\npwd:%@\nnumber:%ld\n",user,pwd,(long)number);
 }
@@ -102,11 +103,17 @@
 - (void)saveByCoding
 {
     NSString *path = @"/Users/linw/Desktop/codingfile/person.data";
-    Person *p = [[Person alloc]init];
-    p.name = @"linw";
-    p.age = 110;
+//    Person *p = [[Person alloc]init];
+//    p.name = @"linw";
+//    p.age = 110;
+//    
+//    [NSKeyedArchiver archiveRootObject:p toFile:path];
+    Student *s = [[Student alloc]init];
+    s.name = @"ly";
+    s.age = 18;
+    s.num = 2013;
     
-    [NSKeyedArchiver archiveRootObject:p toFile:path];
+    [NSKeyedArchiver archiveRootObject:s toFile:path];
 }
 
 /**
@@ -115,8 +122,11 @@
 - (void)readByCoding
 {
     NSString *path = @"/Users/linw/Desktop/codingfile/person.data";
-    Person *p =[NSKeyedUnarchiver unarchiveObjectWithFile:path];
-    NSLog(@"name:%@,age:%d",p.name,p.age);
+//    Person *p =[NSKeyedUnarchiver unarchiveObjectWithFile:path];
+//    NSLog(@"name:%@,age:%d",p.name,p.age);
+    Student *s = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    
+    NSLog(@"name:%@,age:%d,num:%d",s.name,s.age,s.num);
 }
 
 - (void)viewDidLoad {
