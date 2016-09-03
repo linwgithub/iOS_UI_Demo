@@ -13,7 +13,7 @@
 #import "ContactTableViewCell.h"
 
 @interface ContactsTableViewController ()<UIActionSheetDelegate, AddContectDelegate,EditViewDelegate>
-
+#define ContactsPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]stringByAppendingPathComponent:@"contacts.data"]
 @property (nonatomic, strong) NSMutableArray *contacts;
 @end
 
@@ -27,9 +27,22 @@
 - (NSArray *)contacts
 {
     if (!_contacts) {
-        _contacts = [NSMutableArray array];
+        _contacts = [NSKeyedUnarchiver unarchiveObjectWithFile:ContactsPath];
+        if (_contacts == nil) {
+            _contacts = [NSMutableArray array];
+        }
     }
     return _contacts;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //删除数据模型
+    [self.contacts removeObjectAtIndex:indexPath.row];
+    //刷新表格
+    [self.tableView reloadData];
+    //3、归档
+    [NSKeyedArchiver archiveRootObject:self.contacts toFile:ContactsPath];
 }
 
 /**
@@ -50,21 +63,21 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
+    
     return self.contacts.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    static NSString *ID = @"contactCell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-////    if (cell == nil) {
-////        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-////    }
-//    Contact *contact = self.contacts[indexPath.row];
-//    cell.textLabel.text = contact.name;
-//    cell.detailTextLabel.text = contact.phone;
-//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-//    return cell;
+    //    static NSString *ID = @"contactCell";
+    //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    ////    if (cell == nil) {
+    ////        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    ////    }
+    //    Contact *contact = self.contacts[indexPath.row];
+    //    cell.textLabel.text = contact.name;
+    //    cell.detailTextLabel.text = contact.phone;
+    //    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    //    return cell;
     ContactTableViewCell *cell = [ContactTableViewCell cellWithTableView:tableView];
     cell.contact = self.contacts[indexPath.row];
     return cell;
@@ -89,6 +102,7 @@
         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
         etVc.contact = self.contacts[path.row];
         etVc.delegate = self;
+        
     }
 }
 
@@ -102,10 +116,17 @@
     [self.contacts addObject:contact];
     //2、刷新表格
     [self.tableView reloadData];
+    //3、归档
+    [NSKeyedArchiver archiveRootObject:self.contacts toFile:ContactsPath];
 }
 
 - (void)saveChangeContact:(EditViewViewController *)evVc contact:(Contact *)contact
 {
+    //1、刷新表格
     [self.tableView reloadData];
+    
+    //2、归档
+    [NSKeyedArchiver archiveRootObject:self.contacts toFile:ContactsPath];
+    
 }
 @end
