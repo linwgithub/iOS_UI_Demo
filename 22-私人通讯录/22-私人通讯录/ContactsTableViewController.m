@@ -40,7 +40,9 @@
     //删除数据模型
     [self.contacts removeObjectAtIndex:indexPath.row];
     //刷新表格
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
+    //单行删除
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
     //3、归档
     [NSKeyedArchiver archiveRootObject:self.contacts toFile:ContactsPath];
 }
@@ -60,6 +62,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIBarButtonItem *addbtn = self.navigationItem.leftBarButtonItem;
+    UIBarButtonItem *deletBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(deletRow)];
+    
+    self.navigationItem.leftBarButtonItems = @[deletBtn,addbtn];
+}
+
+/**
+ *  tableview显示删除，编辑效果
+ */
+- (void)deletRow
+{
+    [self.tableView setEditing:!self.tableView.editing animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -82,12 +97,6 @@
     cell.contact = self.contacts[indexPath.row];
     return cell;
 }
-
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    Contact *contact = self.contacts[indexPath.row];
-////    [self performSegueWithIdentifier:@"editview" sender:contact];
-//}
 
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
